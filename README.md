@@ -5,4 +5,5 @@ funny game, run
 ./nob
 ```
 to build.
+open `build/index.html` in browser to play.
 

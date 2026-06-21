@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Br0k_n Wo7_d</title>
+  <!--
+  Copyright (c)  2026 bobon4uto.
+  Permission is granted to copy, distribute and/or modify this document
+  under the terms of the GNU Free Documentation License, Version 1.2
+  or any later version published by the Free Software Foundation;
+  with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
+  Texts.  A copy of the license is included in the section entitled "GNU
+  Free Documentation License".
+  -->
+  <meta name="description" content="?brjbal;??? blf;qru34pt??">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div id="main-div" class="main">
+
+  <div class="question">
+    <p id="question" class="story">finish</p>
+  </div>
+
+  <div id="next-back" class="button-holder">
+    <button id="btn-restart-debug" type="button" class="btn">restart</button>
+  </div>
+    <p class="story"> (restarting keeps your answers) </p>
+    <p class="story"> (breaking the world resets answers) </p>
+  <div id="break" class="button-holder">
+    <button id="btn-break" type="button" class="btn">break the world</button>
+  </div>
+</div>
+<script src="gibberish.js"></script>
+<script>
+
+
+const the_machine = sessionStorage.getItem("machine");
+
+
+
+function set_question(question) {
+  const mach1ne_question = document.querySelector('#question');
+  mach1ne_question.textContent =  question ;
+}
+
+function get_question() {
+  return to_gibber("the world is restored. You helped machine find all missing pieces. Now people have one_plus_one eyes, when they sleep, they see sheep jumping over the fence, cars are driving fast and over six_seven miles per hour. There are "+ (to_gibber("twenty_one") - 7) +" month in a year. And most importantly, the Riemann conjecture is proven! (the proof: riemann_conjecture )");
+}
+
+
+const btn_restart= document.querySelector('#btn-restart-debug');
+btn_restart.onclick = () => {
+  window.location.href='index.html';
+}
+const btn_break= document.querySelector('#btn-break');
+btn_break.onclick = () => {
+  init_gibber()
+  set_question( get_question() );
+}
+set_question( get_question() );
+
+
+
+</script>
+
+</body>
+</html>

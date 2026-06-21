@@ -1,0 +1,19 @@
+#!/bin/bash
+rm -rf build
+mkdir -p build
+
+cp style.css build
+cp index.html build
+cp LICENSE build
+cp src/gibberish.js build
+cp src/stage12.t.js.html build
+cp src/no.html build
+cp -r imgs build
+cp -r sounds build
+export PY="python3"
+$PY build.py
+cd build
+zip -r game.zip *
+cd ..
+#rm -f game.zip
+#zip game.zip *

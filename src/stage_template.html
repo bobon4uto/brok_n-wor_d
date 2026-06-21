@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Br0k_n Wo7_d</title>
+  <!--
+  Copyright (c)  2026 bobon4uto.
+  Permission is granted to copy, distribute and/or modify this document
+  under the terms of the GNU Free Documentation License, Version 1.2
+  or any later version published by the Free Software Foundation;
+  with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
+  Texts.  A copy of the license is included in the section entitled "GNU
+  Free Documentation License".
+  -->
+  <meta name="description" content="?brjbal;??? blf;qru34pt??">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div id="main-div" class="main">
+
+  <div class="question">
+    <img src="imgs/mach1ne.png" alt="mach1ne" class="mach1ne"/>
+    <p id="question" class="story">??? asks: what is this?</p>
+  </div>
+
+!!MARK
+
+
+  <div id="next-back" class="button-holder">
+    <button id="btn-back" type="button" class="btn">back</button>
+    <button id="btn-next" type="button" class="btn">next</button>
+  </div>
+</div>
+<script src="gibberish.js"></script>
+<script>
+
+
+const the_machine = sessionStorage.getItem("machine");
+
+
+
+function set_question(question) {
+  const mach1ne_question = document.querySelector('#question');
+  mach1ne_question.textContent = to_gibber("machine asks: ") + question ;
+}
+
+const the_answer = document.querySelector('#input-answer');
+
+!!CODE
+
+const btn_back= document.querySelector('#btn-back');
+btn_back.onclick = () => {
+  window.location.href='stageNUMB.t.js.html';
+}
+
+const btn_next = document.querySelector('#btn-next');
+btn_next.onclick = () => {
+  window.location.href='stageNUMN.t.js.html';
+}
+
+set_question( get_question() );
+
+
+
+</script>
+
+</body>
+</html>

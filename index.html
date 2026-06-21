@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Br0k_n Wo7_d</title>
+  <meta name="description" content="?brjbal;??? blf;qru34pt??">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div id="main-div" class="main">
+  <p id="main-story" class="story">
+  </p>
+  <div id="yes-no" class="button-holder">
+
+
+    <button id="btn-no"  type="button"  class="btn negative">0</button>
+    <button id="btn-yes" type="button"  class="btn positive">1</button>
+  </div>
+</div>
+<script src="gibberish.js"></script>
+<script>
+const btn_yes = document.querySelector('#btn-yes');
+const btn_no = document.querySelector('#btn-no');
+const intro_story = document.querySelector('#main-story');
+function safe_init() {
+
+  const broken = geta("broken");
+  if (broken === "1") {
+  } else {
+    init_gibber()
+    seta("broken","1")
+  }
+}
+
+safe_init()
+intro_story.textContent = to_gibber(
+`
+  Long time ago this world was at peace. But an evil Math Mage came in and scrambled all mathematics. Many Linguists fought him, but unknowingly,
+  they scrambled words too. After all, they were sheep and he was the fenrir. Many ${to_gibber("animal")}s struggled to survive in this world,
+  they almost went extinct. But one_plus_one legged creatures, no longer called human at that point as that name was cast into oblivion,
+  created a machine that was capable of preserving existing words. Problem is - no one remembers any words.
+  May you help the machine by having a conversation with it?
+`
+)
+btn_yes.onclick = () => {
+  window.location.href='stage1.t.js.html';
+}
+btn_no.onclick = () => {
+  window.location.href='no.html';
+}
+</script>
+
+</body>
+</html>
